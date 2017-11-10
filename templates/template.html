@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>some cool nasa stuff</title>
+{% endblock %}
+
+{% block body %}
+<h2>{{ pic_title }}</h2>
+<img src={{image}}>
+<p>{{ info }}</p>
+{% endblock %}
