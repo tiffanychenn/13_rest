@@ -1,11 +1,13 @@
 {% extends "base.html" %}
 
 {% block title %}
-<title>some cool nasa stuff</title>
+<title>wanna hear something cool?</title>
 {% endblock %}
 
 {% block body %}
-<h2>{{ pic_title }}</h2>
-<img src={{image}}>
-<p>{{ info }}</p>
+<h2>Fill out this form!</h2>
+<form action="/listen" method="POST">
+    <input type="text" name="user">
+    <input type="submit" value="speechify this text!">
+</form>
 {% endblock %}
